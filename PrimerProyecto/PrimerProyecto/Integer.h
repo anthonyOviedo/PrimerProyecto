@@ -4,9 +4,9 @@
 #include<sstream>
 struct Nodo {
 	int n;
-	int* vector;
+	short int* vector;
 	struct Nodo* next;
-	Nodo(int n, Nodo* sig = nullptr) : n{ n }, vector{ new int[n] }, next{ sig } {}
+	Nodo(int n, Nodo* sig = nullptr) : n{ n }, vector{ new short int[n] }, next{ sig } {}
 };
 class Integer{
 private:

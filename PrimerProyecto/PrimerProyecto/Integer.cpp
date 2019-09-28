@@ -16,7 +16,7 @@ void Integer::insertar(string) {
 string Integer::toString() {
 	stringstream s;
 	Nodo* tmp = inicio;
-	int* vector;
+	short int* vector;
 	while (tmp != nullptr){
 		vector = tmp->vector;
 		for (int i = 0; i < tmp->n; i++){
@@ -24,4 +24,6 @@ string Integer::toString() {
 		}
 		tmp = tmp->next;
 	}
+	return s.str();
 }
+
